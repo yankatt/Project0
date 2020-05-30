@@ -27,13 +27,20 @@ table {
 }
 
 table th, table td {
+  font-family: serif;
+  font-size: 20px;
   border: 1px solid black;
   padding: 5px;
   text-align: center;
 }
 
 table th {
-  background-color: gray;
+  background-color: #006600;
+  color: lightgray;
+}
+
+table td {
+  background-color: #009600;
 }
 
 #navbar {
