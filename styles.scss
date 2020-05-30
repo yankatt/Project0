@@ -1,0 +1,41 @@
+body {
+    background-color: lightgray;
+}
+
+header {
+    padding: 20px;
+}
+
+.nav {
+    margin: 20px;
+}
+
+.nav-link {
+    color: #006600;
+}
+
+.nav-link:hover {
+    color: #003300;
+}
+
+.card {
+    margin: 20px;
+}
+
+.card-image-top {
+    width: 10px;
+}
+
+.bottom-page {
+    margin-top: 4000px;
+}
+
+.btn-primary {
+    background-color: #006600;
+    border-color: #006600;
+}
+
+.btn-primary:hover {
+    background-color: #003300;
+    border-color: #003300;
+}
