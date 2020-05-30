@@ -1,3 +1,15 @@
+@media (min-width: 700px) {
+  h1::before {
+    content: "Welcome to the desktop version of my webpage!";
+  }
+}
+
+@media (max-width: 699px) {
+  h1::before {
+    content: "Welcome to the mobile version of my webpage!";
+  }
+}
+
 body {
   background-color: lightgray;
 }
@@ -6,7 +18,25 @@ header {
   padding: 20px;
 }
 
-.nav {
+table {
+  border: 3px dotted black;
+  border-collapse: separate;
+  border-radius: 20px;
+  width: 50%;
+  padding: 5px;
+}
+
+table th, table td {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+table th {
+  background-color: gray;
+}
+
+#navbar {
   margin: 20px;
 }
 
@@ -16,6 +46,10 @@ header {
 
 .nav-link:hover {
   color: #003300;
+}
+
+.row > div {
+  padding: 40px;
 }
 
 .card {

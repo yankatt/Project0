@@ -1,3 +1,17 @@
+$bordercolor: black;
+
+@media (min-width: 700px) {
+    h1::before {
+        content: "Welcome to the desktop version of my webpage!";
+    }
+}
+
+@media (max-width:699px) {
+    h1::before {
+        content: "Welcome to the mobile version of my webpage!";
+    }
+}
+
 body {
     background-color: lightgray;
 }
@@ -6,16 +20,41 @@ header {
     padding: 20px;
 }
 
-.nav {
+table {
+    border: 3px dotted $bordercolor;
+    border-collapse: separate;
+    border-radius: 20px;
+    width: 50%;
+    padding: 5px;
+
+    th, td {
+        border: 1px solid $bordercolor;
+        padding: 5px;
+        text-align: center;
+    }
+
+    th {
+        background-color: gray;
+    }
+}
+
+#navbar {
     margin: 20px;
 }
 
 .nav-link {
     color: #006600;
+    
+    &:hover {
+        color: #003300
+    }
 }
 
-.nav-link:hover {
-    color: #003300;
+.row {
+    > div {
+    padding: 40px;
+    }
+        
 }
 
 .card {
@@ -33,9 +72,9 @@ header {
 .btn-primary {
     background-color: #006600;
     border-color: #006600;
-}
 
-.btn-primary:hover {
-    background-color: #003300;
-    border-color: #003300;
+    &:hover {
+        background-color: #003300;
+        border-color: #003300;
+    }
 }
